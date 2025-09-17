@@ -93,6 +93,10 @@ const LoginModal = ({ isOpen, onClose, onLogin }: LoginModalProps) => {
               <CardHeader>
                 <CardTitle className="text-lg">Student Login</CardTitle>
                 <CardDescription>Enter your roll number and password</CardDescription>
+                <div className="mt-2 p-2 bg-primary-light/20 rounded-lg border border-primary/20">
+                  <p className="text-xs font-medium text-primary mb-1">Demo Credentials:</p>
+                  <p className="text-xs text-muted-foreground">Roll No: <span className="font-mono">CS001</span> | Password: <span className="font-mono">student123</span></p>
+                </div>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleStudentLogin} className="space-y-4">
@@ -140,6 +144,10 @@ const LoginModal = ({ isOpen, onClose, onLogin }: LoginModalProps) => {
               <CardHeader>
                 <CardTitle className="text-lg">Teacher Login</CardTitle>
                 <CardDescription>Enter your name and password</CardDescription>
+                <div className="mt-2 p-2 bg-success-light/20 rounded-lg border border-success/20">
+                  <p className="text-xs font-medium text-success mb-1">Demo Credentials:</p>
+                  <p className="text-xs text-muted-foreground">Name: <span className="font-mono">Dr. Sarah Johnson</span> | Password: <span className="font-mono">teacher123</span></p>
+                </div>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleTeacherLogin} className="space-y-4">
